@@ -14,7 +14,7 @@ const img = new Image();
 // Source de cette image : on indique le chemin du fichier à charger.
 // Ce fichier contient TOUTES les images du jeu réunies (spritesheet) :
 // l'oiseau, le décor, les tuyaux — on va découper dedans plus tard.
-img.src = "/media/flappy-bird-set.png";
+img.src = "./media/flappy-bird-set.png";
 
 // ============================================================
 // Reglages generaux
@@ -28,7 +28,7 @@ let gamePlaying = false;
 const gravity = 0.5;
 
 // Vitesse des poteaux lorsqu'ils arrivent (et vitesse de défilement du décor)
-const speed = 6.2;
+const speed = 8.2;
 
 // Taille de l'oiseau en pixels : [largeur, hauteur]
 const size = [60, 36];
