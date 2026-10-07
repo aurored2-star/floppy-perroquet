@@ -261,7 +261,7 @@ const render = () => {
       if (
         [
           pipe[0] <= cTenth + size[0],       // le tuyau a atteint (ou dépassé) le bord droit de l'oiseau
-          pipe[0] + pipeWidth <= cTenth,      // ... et son bord droit n'a pas encore dépassé l'oiseau
+          pipe[0] + pipeWidth >= cTenth,      // ... et son bord droit n'a pas encore dépassé l'oiseau
           pipe[1] > flyHeight ||              // l'oiseau est plus haut que le haut de l'ouverture
             pipe[1] + pipeGap < flyHeight + size[1], // ... ou plus bas que le bas de l'ouverture
         ].every((elem) => elem)
